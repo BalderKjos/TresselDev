@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<!DOCTYPE bulletml SYSTEM "bulletml.dtd">
+
+<bulletml>
+   <action label="top">
+    <repeat>
+    <times>1000</times>
+    <actionRef label="shoot1">
+    </actionRef>
+    <wait>2</wait>
+    </repeat>
+  </action>
+
+
+<action label="shoot1">
+<wait>40</wait> 
+<repeat>
+      <times>20</times>
+      <action>
+        <fire>
+          <direction type="relative">0</direction>
+          <bullet label="EBullet1"/>
+          <speed>1.8</speed>
+        </fire>
+		<fire>
+          <direction type="relative">180</direction>
+            <bullet label="EBullet1"/>
+          <speed>1.8</speed>
+        </fire>        
+		<wait>5</wait>
+      </action>	  
+</repeat>  
+      <wait>40</wait> 
+<repeat>
+      <times>20</times>
+      <action>
+        <fire>
+          <direction type="relative">0</direction>
+          <bullet label="EBullet2"/>
+          <speed>1.8</speed>
+        </fire>
+		<fire>
+          <direction type="relative">180</direction>
+            <bullet label="EBullet2"/>
+          <speed>1.8</speed>
+        </fire>        
+		<wait>5</wait>
+      </action>	  
+</repeat>  
+      <wait>40</wait> 
+<repeat>
+      <times>20</times>
+      <action>
+        <fire>
+          <direction type="relative">0</direction>
+          <bullet label="EBullet3"/>
+          <speed>1.8</speed>
+        </fire>
+		<fire>
+          <direction type="relative">180</direction>
+            <bullet label="EBullet3"/>
+          <speed>1.8</speed>
+        </fire>        
+		<wait>5</wait>
+      </action>	  
+</repeat>  	 
+      <wait>40</wait> 
+<repeat>
+      <times>8</times>
+      <action>
+        <fire>
+          <direction type="relative">0</direction>
+          <bullet label="EBullet4"/>
+          <speed>1</speed>
+        </fire>
+		<fire>
+          <direction type="relative">180</direction>
+            <bullet label="EBullet4"/>
+          <speed>1</speed>
+        </fire>        
+		<wait>10</wait>
+      </action>	  
+</repeat>  
+</action>
+
+</bulletml>

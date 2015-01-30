@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: f5f6b5f0de17e1b448a585a9d0a6412c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: megabossB
+    21300002: megabossB_part1
+    21300004: megabossB_part2
+    21300006: megabossB_part3
+    21300008: megabossB_wing
+    21300010: megabossB_skull
+    21300012: megabossB_brain
+    21300014: megabossB_eye3
+    21300016: megabossB_eye2
+    21300018: megabossB_eye1
+    21300020: megabossB_nerve3
+    21300022: megabossB_nerve2
+    21300024: megabossB_nerve1
+    21300026: megabossB_bigbullet
+    21300028: megabossB_beam1
+    21300030: megabossB_beam2
+    21300032: megabossB_beam3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 10
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: megabossB_part1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 72
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_part2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 78
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_part3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 84
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_wing
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 105
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_skull
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 55
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_brain
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_eye3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 21
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_eye2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 11
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_eye1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_nerve3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 32
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_nerve2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 32
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_nerve1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 32
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_bigbullet
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_beam1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 4
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_beam2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 13
+        width: 17
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: megabossB_beam3
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 21
+        width: 17
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: megaboss
+  userData: 

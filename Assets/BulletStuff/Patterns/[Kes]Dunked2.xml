@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE bulletml SYSTEM "bulletml.dtd">
+
+<bulletml>
+   <action label="top">
+    <wait>2000</wait>
+    <repeat>
+    <times>1000</times>
+    <actionRef label="shoot2">
+    </actionRef>
+    <wait>2</wait>
+    </repeat>
+  </action>
+
+
+<action label="shoot2">
+<repeat>
+      <times>180</times>
+            <wait>40</wait>
+      <action>
+        <fire>
+          <direction type="sequence">11</direction>
+            <bullet label="EBullet1"/>
+          <speed>2.2</speed>
+         <bullet />
+        </fire>
+        <wait>5</wait>
+      </action>
+      <wait>40</wait>
+      <action>
+        <fire>
+          <direction type="sequence">-11</direction>
+            <bullet label="EBullet3"/>
+          <speed>2.2</speed>
+		<bullet />
+        </fire>
+        <wait>5</wait>
+      </action>
+       <wait>40</wait>
+      <action>
+        <fire>
+          <direction type="sequence">11</direction>
+            <bullet label="EBullet2"/>
+          <speed>2.2</speed>
+		<bullet />
+        </fire>
+        <wait>5</wait>
+      </action>
+    </repeat>  
+</action>
+
+</bulletml>

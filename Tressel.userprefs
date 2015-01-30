@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GlobalGameManager.cs">
+    <Files>
+      <File FileName="Assets\Scripts\GUI\SelectScreen.cs" Line="179" Column="35" />
+      <File FileName="Assets\Scripts\GlobalGameManager.cs" Line="84" Column="13" />
+      <File FileName="Assets\DEBUGControllerGUi.cs" Line="17" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

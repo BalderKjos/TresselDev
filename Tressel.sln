@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{D5A2A9DE-2D6E-44D6-1844-A8CFDAC1E242}") = "Tressel", "Assembly-CSharp.csproj", "{EAE4B3CC-AE45-9F59-25F7-4B5B212AA4BD}"
+EndProject
+Project("{D5A2A9DE-2D6E-44D6-1844-A8CFDAC1E242}") = "Tressel", "Assembly-CSharp-Editor.csproj", "{2BE9E6F0-4260-A822-9D78-7692EBFC0F35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAE4B3CC-AE45-9F59-25F7-4B5B212AA4BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE4B3CC-AE45-9F59-25F7-4B5B212AA4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE4B3CC-AE45-9F59-25F7-4B5B212AA4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE4B3CC-AE45-9F59-25F7-4B5B212AA4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE9E6F0-4260-A822-9D78-7692EBFC0F35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE9E6F0-4260-A822-9D78-7692EBFC0F35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE9E6F0-4260-A822-9D78-7692EBFC0F35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE9E6F0-4260-A822-9D78-7692EBFC0F35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+																																																							GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
+EndGlobal
