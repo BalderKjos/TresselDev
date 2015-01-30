@@ -41,7 +41,12 @@ public class BulletScript : MonoBehaviour {
 		}
 
 	void HitSomething(Collider2D c) {
-		if (c.gameObject.tag != ignoreTag && c.gameObject.tag != ignoreTag2 
+
+		if (c.gameObject.tag == "BulletBlocker") {
+			Destroy (gameObject);
+		}
+
+		else if (c.gameObject.tag != ignoreTag && c.gameObject.tag != ignoreTag2 
 		    && c.gameObject.tag != ignoreTag3 && c.gameObject.tag != ignoreTag4 
 		    && c.gameObject.tag != ignoreTag5 && c.gameObject.tag != ignoreTag6 
 		    && c.gameObject.tag != grazeTag && c.gameObject.tag != ignoreTag7
@@ -65,5 +70,5 @@ public class BulletScript : MonoBehaviour {
 		((GameObject)instantiatedObject).transform.parent = c.gameObject.transform;
 		Destroy(instantiatedObject, time);
 		}
-	}
+}
 }

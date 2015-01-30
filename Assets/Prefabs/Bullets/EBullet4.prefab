@@ -10,8 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
-  - 60: {fileID: 6000000}
-  - 50: {fileID: 5000000}
+  - 58: {fileID: 5800000}
   m_Layer: 10
   m_Name: EBullet4
   m_TagString: EnemyBullet
@@ -31,23 +30,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5000000
-Rigidbody2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!60 &6000000
-PolygonCollider2D:
+--- !u!58 &5800000
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -55,16 +39,8 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Poly:
-    m_Paths:
-    - - {x: -.00547778606, y: .0391979031}
-      - {x: -.0301023722, y: .0182934608}
-      - {x: -.0282934513, y: -.0172866583}
-      - {x: -.0081911087, y: -.0391978845}
-      - {x: .0101023121, y: -.0401022844}
-      - {x: .0291978922, y: -.0182422809}
-      - {x: .0282934513, y: .0138224168}
-      - {x: .0110579338, y: .0355801396}
+  m_Radius: .0340000018
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1

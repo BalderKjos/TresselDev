@@ -25,7 +25,6 @@
         </fire>
         <wait>2</wait>
       </action>
-      <wait>40</wait>
       <action>
         <fire>
           <direction type="sequence">-8</direction>
@@ -35,7 +34,6 @@
         </fire>
         <wait>2</wait>
       </action>
-       <wait>40</wait>
       <action>
         <fire>
           <direction type="sequence">8</direction>

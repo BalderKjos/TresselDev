@@ -19,9 +19,6 @@ namespace Pixelnest.BulletML
     /// The player instance in the scene
     /// </summary>
     public GameObject player;
-		public GameObject player1;
-		public GameObject player2;
-		public GameObject player3;
 
     /// <summary>
     /// The bullet definitions to use
@@ -115,18 +112,6 @@ namespace Pixelnest.BulletML
 
       // Clamp
       gameDifficulty = Mathf.Clamp(gameDifficulty, 0f, 1f);
-		
-			timer += Time.deltaTime;
-			if (timer >= changeTime) {
-				currentTarget = Random.Range(1,4);
-				if (currentTarget == 1)
-					player = player1;
-				else if (currentTarget == 2)
-					player = player2;
-				else if (currentTarget == 3)
-					player = player3;
-				timer = 0f;
-			} 
 	
 
       if (timeSpeed != previousTimeSpeed || scale != previousScale)
