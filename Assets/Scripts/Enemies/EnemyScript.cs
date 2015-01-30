@@ -48,12 +48,12 @@ public class EnemyScript : MonoBehaviour {
 		}
 	}
 
-	void Damage() {
+	void Damage(DamageSource source) {
 		if(healthBar != null)
 			healthBar.value = currentHealth;
 
 		//player takes damage
-		currentHealth -= 1;
+		currentHealth -= source.damageAmount;
 
 		if (currentHealth <= (maxHealth / 2)) {
 			gameHandler.instance.SpawnMinion();

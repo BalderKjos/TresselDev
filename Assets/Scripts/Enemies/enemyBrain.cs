@@ -16,10 +16,11 @@ public class enemyBrain : MonoBehaviour {
 	
 	}
 
-	void Damage() {
+	void Damage(DamageSource source) {
 		//player takes damage
-		mainBody.SendMessage("Damage", SendMessageOptions.DontRequireReceiver);
 		if (multiplier == true)
-		mainBody.SendMessage("Damage", SendMessageOptions.DontRequireReceiver);
+			source.damageAmount *= 2;
+
+		mainBody.SendMessage("Damage", source, SendMessageOptions.DontRequireReceiver);
 	}
 }

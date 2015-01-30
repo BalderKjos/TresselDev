@@ -110,9 +110,9 @@ public class character : MonoBehaviour {
 		playerGui.UpdateBars(currentHealth, boost);
 	}
 
-	void Damage() {
+	void Damage(DamageSource source) {
 		//player takes damage
-		currentHealth -= 1;
+		currentHealth -= source.damageAmount;
 		position = new Vector2 (gameObject.transform.position.x, gameObject.transform.position.y);
 		if (currentHealth <= 0) {
 			playerGui.UpdateBars(currentHealth, boost);

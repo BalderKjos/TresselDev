@@ -52,14 +52,14 @@ public class enemyParts : MonoBehaviour {
 		GetComponent<PolygonCollider2D>().enabled = false;
 	}
 
-	void Damage() {
+	void Damage(DamageSource source) {
 		//player takes damage
 		currentHealth -= 1;
 
 		if(mainBody != null) {
-			mainBody.SendMessage("Damage", SendMessageOptions.DontRequireReceiver);
 			if (multiplier == true)
-				mainBody.SendMessage("Damage", SendMessageOptions.DontRequireReceiver);
+				source.damageAmount *= 2;
+			mainBody.SendMessage("Damage", source, SendMessageOptions.DontRequireReceiver);
 		}
 
 		if (currentHealth <= 0) {
