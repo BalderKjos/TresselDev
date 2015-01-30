@@ -79,11 +79,8 @@ public class SelectScreen : MonoBehaviour {
 			startButton.interactable = false;
 		}
 
-		if(Debugger.isOn && Input.GetKeyDown(KeyCode.Backspace)) {
-			Application.LoadLevel(6);
-		}
 		if(Debugger.isOn && Input.GetKeyDown(KeyCode.T)) {
-			Application.LoadLevel(7);
+			Application.LoadLevel(6);
 		}
 	}
 

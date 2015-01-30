@@ -66,6 +66,10 @@ public class EnemyScript : MonoBehaviour {
 			position = new Vector2 (gameObject.transform.position.x, gameObject.transform.position.y);
 			Instantiate (Explosion,position,transform.rotation);
 			CameraShaker.Shake(3, gameHandler.endSceneDelay * 0.2f);
+			foreach(enemyParts ep in GetComponentsInChildren<enemyParts>()){
+				ep.transform.parent = null;
+				ep.ForceDestroy();
+			}
 			gameHandler.instance.KilledBoss();		
 			Destroy (gameObject);
 		}

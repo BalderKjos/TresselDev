@@ -10,6 +10,7 @@ public class enemyParts : MonoBehaviour {
 	public GameObject mainBody;
 	public bool multiplier = false;
 
+	public Vector3 deathAngle = new Vector3(0,1,0);
 	private float deathAnimTimer = 2;
 	private bool kabooooom;
 
@@ -27,7 +28,7 @@ public class enemyParts : MonoBehaviour {
 
 			if(Explosion != null) {
 				float sin = 0.1f * Mathf.Sin (Time.time * 50);
-				transform.Translate((Vector3.down * 0.01f) + (Vector3.left * sin));
+				transform.Translate((deathAngle * 0.01f) + (new Vector3(deathAngle.y, deathAngle.x, 0) * sin));
 
 				if(Mathf.Floor(deathAnimTimer * 10) % 4 == 0) {
 					if(!kabooooom) {
@@ -42,6 +43,13 @@ public class enemyParts : MonoBehaviour {
 			if(deathAnimTimer <= 0)
 				Destroy (gameObject);
 		}
+	}
+
+	public void ForceDestroy() {
+		currentHealth = 0;
+		Instantiate (Explosion,transform.position,transform.rotation);
+		CameraShaker.Shake(1,deathAnimTimer);
+		GetComponent<PolygonCollider2D>().enabled = false;
 	}
 
 	void Damage() {
