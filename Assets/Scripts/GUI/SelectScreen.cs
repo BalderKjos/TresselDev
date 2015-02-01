@@ -86,18 +86,21 @@ public class SelectScreen : MonoBehaviour {
 
 	void UpdateVisuals(int gamepad) {
 		int pnumber = GlobalGameManager.GetPlayerNumber(gamepad);
+		SelectScreenPlayer p = GetPlayerDisplay(pnumber);
 
-		if(gamepad == 1) {
-			GetPlayerDisplay(pnumber).UpdateVisual(pnumber, p1joined, p1Ready);
-		}
-		if(gamepad == 2) {
-			GetPlayerDisplay(pnumber).UpdateVisual(pnumber, p2joined, p2Ready);
-		}
-		if(gamepad == 3) {
-			GetPlayerDisplay(pnumber).UpdateVisual(pnumber, p3joined, p3Ready);
-		}
-		if(gamepad == 4) {
-			GetPlayerDisplay(pnumber).UpdateVisual(pnumber, p4joined, p4Ready);
+		if(p != null) {
+			if(gamepad == 1) {
+				p.UpdateVisual(pnumber, p1joined, p1Ready);
+			}
+			if(gamepad == 2) {
+				p.UpdateVisual(pnumber, p2joined, p2Ready);
+			}
+			if(gamepad == 3) {
+				p.UpdateVisual(pnumber, p3joined, p3Ready);
+			}
+			if(gamepad == 4) {
+				p.UpdateVisual(pnumber, p4joined, p4Ready);
+			}
 		}
 	}
 
