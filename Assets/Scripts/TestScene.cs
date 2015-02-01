@@ -121,21 +121,21 @@ public class TestScene : MonoBehaviour {
 		GameObject b1 = (GameObject)Instantiate(buttonPrefab);
 		b1.transform.SetParent(buttonPrefab.transform.parent);
 		b1.SetActive(true);
-		b1.GetComponent<CodeButton>().text.text = "Tools";
+		b1.GetComponent<CodeButton>().text.text = "1 Tools";
 		b1.GetComponent<CodeButton>().returnMethod = OnButtonPress;
 		b1.GetComponent<CodeButton>().returnArgument = 1;
 
 		GameObject b2 = (GameObject)Instantiate(buttonPrefab);
 		b2.transform.SetParent(buttonPrefab.transform.parent);
 		b2.SetActive(true);
-		b2.GetComponent<CodeButton>().text.text = "Powerups";
+		b2.GetComponent<CodeButton>().text.text = "2 Powerups";
 		b2.GetComponent<CodeButton>().returnMethod = OnButtonPress;
 		b2.GetComponent<CodeButton>().returnArgument = 2;
 
 		GameObject b3 = (GameObject)Instantiate(buttonPrefab);
 		b3.transform.SetParent(buttonPrefab.transform.parent);
 		b3.SetActive(true);
-		b3.GetComponent<CodeButton>().text.text = "Bosses";
+		b3.GetComponent<CodeButton>().text.text = "3 Bosses";
 		b3.GetComponent<CodeButton>().returnMethod = OnButtonPress;
 		b3.GetComponent<CodeButton>().returnArgument = 3;
 	}
@@ -144,14 +144,14 @@ public class TestScene : MonoBehaviour {
 		GameObject b1 = (GameObject)Instantiate(buttonPrefab);
 		b1.transform.SetParent(buttonPrefab.transform.parent);
 		b1.SetActive(true);
-		b1.GetComponent<CodeButton>().text.text = "Heal";
+		b1.GetComponent<CodeButton>().text.text = "1 Heal";
 		b1.GetComponent<CodeButton>().returnMethod = OnButtonPress;
 		b1.GetComponent<CodeButton>().returnArgument = 1;
 
 		GameObject b2 = (GameObject)Instantiate(buttonPrefab);
 		b2.transform.SetParent(buttonPrefab.transform.parent);
 		b2.SetActive(true);
-		b2.GetComponent<CodeButton>().text.text = "Damage Boss";
+		b2.GetComponent<CodeButton>().text.text = "2 Damage Boss";
 		b2.GetComponent<CodeButton>().returnMethod = OnButtonPress;
 		b2.GetComponent<CodeButton>().returnArgument = 2;
 		
@@ -169,7 +169,7 @@ public class TestScene : MonoBehaviour {
 			GameObject b1 = (GameObject)Instantiate(buttonPrefab);
 			b1.transform.SetParent(buttonPrefab.transform.parent);
 			b1.SetActive(true);
-			b1.GetComponent<CodeButton>().text.text = powerups[i].prefab.name;
+			b1.GetComponent<CodeButton>().text.text = (i+1) + " " + powerups[i].prefab.name;
 			b1.GetComponent<CodeButton>().returnMethod = OnButtonPress;
 			b1.GetComponent<CodeButton>().returnArgument = i;
 		}
@@ -180,7 +180,7 @@ public class TestScene : MonoBehaviour {
 			GameObject b1 = (GameObject)Instantiate(buttonPrefab);
 			b1.transform.SetParent(buttonPrefab.transform.parent);
 			b1.SetActive(true);
-			b1.GetComponent<CodeButton>().text.text = bosses[i].prefab.name;
+			b1.GetComponent<CodeButton>().text.text = (i+1) + " " + bosses[i].prefab.name;
 			b1.GetComponent<CodeButton>().returnMethod = OnButtonPress;
 			b1.GetComponent<CodeButton>().returnArgument = i;
 		}
