@@ -33,7 +33,7 @@ public class enemyParts : MonoBehaviour {
 				if(Mathf.Floor(deathAnimTimer * 10) % 4 == 0) {
 					if(!kabooooom) {
 						kabooooom = true;
-						Instantiate (Explosion,transform.position + new Vector3(Random.Range(-1.0f,1.0f), Random.Range(-1.0f,1.0f)),transform.rotation);
+						Destroy(Instantiate (Explosion,transform.position + new Vector3(Random.Range(-1.0f,1.0f), Random.Range(-1.0f,1.0f)),transform.rotation), Explosion.GetComponent<ParticleSystem>().duration * 2);
 					}
 				} else {
 					kabooooom = false;
@@ -47,7 +47,7 @@ public class enemyParts : MonoBehaviour {
 
 	public void ForceDestroy() {
 		currentHealth = 0;
-		Instantiate (Explosion,transform.position,transform.rotation);
+		Destroy(Instantiate (Explosion,transform.position,transform.rotation), Explosion.GetComponent<ParticleSystem>().duration * 2);
 		CameraShaker.Shake(1,deathAnimTimer);
 		GetComponent<PolygonCollider2D>().enabled = false;
 	}
@@ -65,7 +65,7 @@ public class enemyParts : MonoBehaviour {
 		if (currentHealth <= 0) {
 			//position = new Vector2 (gameObject.transform.position.x, gameObject.transform.position.y);
 			if(Explosion != null)
-				Instantiate (Explosion,transform.position,transform.rotation);
+				Destroy(Instantiate (Explosion,transform.position,transform.rotation), Explosion.GetComponent<ParticleSystem>().duration * 2);
 			CameraShaker.Shake(1,deathAnimTimer);
 			if(GetComponent<PolygonCollider2D>() != null)
 				GetComponent<PolygonCollider2D>().enabled = false;

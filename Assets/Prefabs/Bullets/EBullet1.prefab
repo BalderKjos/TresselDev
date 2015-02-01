@@ -64,6 +64,7 @@ MonoBehaviour:
   playerNum: 1
   sparks: {fileID: 100000, guid: c0043b733c028ff4b9a0b1f8eae35cfc, type: 2}
   Explosion2: {fileID: 100000, guid: c0043b733c028ff4b9a0b1f8eae35cfc, type: 2}
+  damage: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 260294831
+  m_SortingLayerID: 3298099109
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f57ca14c289625c43b4f13a8a740d1a8, type: 3}
   m_Color: {r: .996078432, g: .996078432, b: .996078432, a: 1}

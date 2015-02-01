@@ -32,3 +32,8 @@ MonoBehaviour:
     sprite: {fileID: 0}
     TimeToLiveInSeconds: 0
     DestroyWhenOutOfScreen: 0
+  - name: Lazer
+    prefab: {fileID: 100002, guid: 26a95d132e6d542479e7f4a3805cb6fd, type: 2}
+    sprite: {fileID: 0}
+    TimeToLiveInSeconds: 0
+    DestroyWhenOutOfScreen: 0

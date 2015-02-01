@@ -11,6 +11,7 @@ GameObject:
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
   - 82: {fileID: 8200000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: playerDeath
   m_TagString: Player
@@ -88,6 +89,19 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102b76c656a7a6c45962c7e672d78221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer: EffectLayer
+  order: 0
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1

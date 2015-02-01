@@ -19,8 +19,11 @@ public class EnemyScript : MonoBehaviour {
 	public Vector2 limits = new Vector2(-7, 7);
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		currentHealth = maxHealth;
+	}
+
+	void Start() {
 		if (healthBar != null) {
 			SetHPBar(healthBar);
 		}

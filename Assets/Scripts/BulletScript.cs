@@ -65,11 +65,11 @@ public class BulletScript : MonoBehaviour {
 
 			Destroy (gameObject);
 		}
-	else if (c.gameObject.tag == grazeTag) {
-		bulletPosition = new Vector2 (gameObject.transform.position.x, gameObject.transform.position.y);
-		instantiatedObject = Instantiate (sparks,bulletPosition,transform.rotation);
-		((GameObject)instantiatedObject).transform.parent = c.gameObject.transform;
-		Destroy(instantiatedObject, time);
+		else if (c.gameObject.tag == grazeTag) {
+			bulletPosition = new Vector2 (gameObject.transform.position.x, gameObject.transform.position.y);
+			instantiatedObject = Instantiate (sparks,bulletPosition,transform.rotation);
+			((GameObject)instantiatedObject).transform.parent = c.gameObject.transform;
+			Destroy(instantiatedObject, time);
 		}
-}
+	}
 }

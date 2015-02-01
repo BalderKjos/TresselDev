@@ -47,15 +47,19 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
-  - name: EffectLayer
-    userID: 1
-    uniqueID: 260294831
+  - name: StarsLayer
+    userID: 2
+    uniqueID: 3727864307
+    locked: 0
+  - name: BulletLayer
+    userID: 3
+    uniqueID: 3298099109
     locked: 0
   - name: Default
     userID: 0
     uniqueID: 0
     locked: 0
-  - name: StarsLayer
-    userID: 2
-    uniqueID: 3727864307
+  - name: EffectLayer
+    userID: 1
+    uniqueID: 260294831
     locked: 0

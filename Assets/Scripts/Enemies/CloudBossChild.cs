@@ -27,9 +27,10 @@ public class CloudBossChild : MonoBehaviour {
 	}
 
 	public void Reset() {
+		transform.localPosition = origin;
+
 		rigidbody2D.velocity = Vector2.zero;
 		rigidbody2D.angularVelocity	 = 0;
-		speed = 50;
-		//transform.localPosition = origin;
+		speed = 10;
 	}
 }
