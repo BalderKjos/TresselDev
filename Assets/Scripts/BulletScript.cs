@@ -53,7 +53,7 @@ public class BulletScript : MonoBehaviour {
 		    && c.gameObject.tag != grazeTag && c.gameObject.tag != ignoreTag7
 		    && c.gameObject.tag != "MovementBlocker")
 		{
-			c.gameObject.SendMessage("Damage", new DamageSource(damage, c.transform.position), SendMessageOptions.DontRequireReceiver);
+			c.gameObject.SendMessage("Damage", new DamageSource(damage, transform.position), SendMessageOptions.DontRequireReceiver);
 
 			if (c.gameObject.tag == "Enemy"){
 				bulletPosition = new Vector2 (gameObject.transform.position.x, gameObject.transform.position.y);

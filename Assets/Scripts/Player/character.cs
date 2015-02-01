@@ -24,7 +24,7 @@ public class character : MonoBehaviour {
 	public GameObject playerHurt;
 
 	public int maxHealth = 10;
-	private int currentHealth;
+	public int currentHealth;
 
 	public PlayerGui playerGui;
 

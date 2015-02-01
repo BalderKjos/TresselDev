@@ -8,30 +8,37 @@ public class EnemyScript : MonoBehaviour {
 	public static int maxHealth = 3000;
 	public int currentHealth;
 	public Slider healthBar;
+	private Color hpColor;
+	private int hpFlash;
+	private Image hpBarColorArea;
+
 	public float speed;
 	public bool direction;
 	public GameObject Explosion;
 	private Vector2 position;
-
 	public Vector2 limits = new Vector2(-7, 7);
 
 	// Use this for initialization
 	void Start () {
 		currentHealth = maxHealth;
 		if (healthBar != null) {
+			SetHPBar(healthBar);
+		}
+	}
+
+	public void SetHPBar(Slider bar) {
+		healthBar = bar;
+
+		if (healthBar != null) {
 			healthBar.maxValue = maxHealth;
 			healthBar.value = currentHealth;
+			hpBarColorArea = healthBar.fillRect.GetComponent<Image>();
+			hpColor = hpBarColorArea.color;
 		}
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if (Debugger.isOn) {
-			if(Input.GetKey(KeyCode.Space) && Input.GetKeyDown(KeyCode.K)) {
-				currentHealth = (int)(currentHealth * 0.5f);
-			}
-				}
-
 		if (currentHealth > 0) {
 				Vector3 position = transform.position;
 				if (position.x >= limits.y) {
@@ -46,11 +53,21 @@ public class EnemyScript : MonoBehaviour {
 				else
 						transform.Translate (Vector3.left * -speed * Time.deltaTime + (Vector3.up * sin));
 		}
+
+		if(hpFlash == 0) {
+			hpBarColorArea.color = hpColor;
+		}
+		if(hpFlash > -1) {
+			hpFlash--;
+		}
 	}
 
 	void Damage(DamageSource source) {
-		if(healthBar != null)
+		if(healthBar != null) {
 			healthBar.value = currentHealth;
+			hpBarColorArea.color = Color.white;
+			hpFlash = 1;
+		}
 
 		//player takes damage
 		currentHealth -= source.damageAmount;

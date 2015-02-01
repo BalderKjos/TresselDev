@@ -4,15 +4,12 @@ using System.Collections;
 
 public class BossSpawner : MonoBehaviour {
 	public int debugPlayerCount = 1;
-
-	public GameObject bossHealthBar;
+	
 	public GameObject boss;
 	public GameObject boss5;
 
 	// Use this for initialization
 	void Start () {
-		bossHealthBar.SetActive(false);
-
 		GameObject prefab = boss;
 		int stage = GlobalGameManager.stage;
 
@@ -36,15 +33,13 @@ public class BossSpawner : MonoBehaviour {
 			if(g.GetComponent<BossMovement>() != null)
 				g.GetComponent<BossMovement>().ResetOrigin(new Vector3(w * i, 0, 0));
 
-			GameObject b = (GameObject)Instantiate(bossHealthBar);
-			b.transform.SetParent(bossHealthBar.transform.parent);
-			b.transform.localScale = Vector3.one;
-			b.SetActive(true);
+			GameObject b = GuiManager.instance.NewBossHealthBar();
 
-			if(g.GetComponent<EnemyScript>() != null)
-				g.GetComponent<EnemyScript>().healthBar = b.GetComponent<Slider>();
-			else
-				g.GetComponentInChildren<EnemyScript>().healthBar = b.GetComponent<Slider>();
+			if(g.GetComponent<EnemyScript>() != null) {
+				g.GetComponent<EnemyScript>().SetHPBar(b.GetComponent<Slider>());
+			} else {
+				g.GetComponentInChildren<EnemyScript>().SetHPBar(b.GetComponent<Slider>());
+			}
 		}
 	}
 

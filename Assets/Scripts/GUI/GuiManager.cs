@@ -3,6 +3,9 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class GuiManager : MonoBehaviour {
+	public static GuiManager instance;
+
+	public GameObject bossHealthBar;
 	public HorizontalLayoutGroup bars;
 	public GameObject skull;
 	public GameObject goldenSkull;
@@ -13,6 +16,8 @@ public class GuiManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		instance = this;
+		bossHealthBar.SetActive(false);
 		int tw = (int)Camera.main.pixelWidth;
 		float bw = Camera.main.pixelWidth * 0.25f;
 
@@ -37,6 +42,14 @@ public class GuiManager : MonoBehaviour {
 				g.SetActive(true);
 			}
 		}
+	}
+
+	public GameObject NewBossHealthBar() {
+		GameObject b = (GameObject)Instantiate(bossHealthBar);
+		b.transform.SetParent(bossHealthBar.transform.parent);
+		b.transform.localScale = Vector3.one;
+		b.SetActive(true);
+		return b;
 	}
 	
 	// Update is called once per frame

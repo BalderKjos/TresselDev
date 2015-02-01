@@ -121,7 +121,7 @@ GameObject:
   - 114: {fileID: 11400018}
   - 114: {fileID: 11400020}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: EyeBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
